@@ -6,7 +6,7 @@ use curv::elliptic::curves::Secp256r1 as p256;
 use curv::elliptic::curves::Ristretto as ristretto;
 use curv::elliptic::curves::{Point, Scalar};
 
-use criterion::{Criterion, BatchSize};
+use criterion::{Criterion, BatchSize, criterion_main};
 
 pub(crate) fn curv_benches() {
     let mut c = Criterion::default();

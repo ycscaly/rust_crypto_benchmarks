@@ -7,10 +7,14 @@ edition = "2021"
 
 [dev-dependencies]
 curv-kzen = { version = "0.10.0", features = ["num-bigint"], default-features = false }
-k256 = {version = "0.13.1", features = ["precomputed-tables", "schnorr"]}
 criterion = { version = "0.4", features = ["html_reports"] }
 elliptic-curve = { version = "0.13.4", features = ["arithmetic", "group"] }
+crypto-bigint = "0.5.1"
 
 [[bench]]
 name = "curv_benches"
+harness = false
+
+[[bench]]
+name = "crypto_bigint_benches"
 harness = false
