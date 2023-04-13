@@ -10,6 +10,8 @@ curv-kzen = { version = "0.10.0", features = ["num-bigint"], default-features = 
 criterion = { version = "0.4", features = ["html_reports"] }
 elliptic-curve = { version = "0.13.4", features = ["arithmetic", "group"] }
 crypto-bigint = "0.5.1"
+fiat-crypto = "0.1.20"
+k256 = "0.13.1"
 
 [[bench]]
 name = "curv_benches"
@@ -18,3 +20,8 @@ harness = false
 [[bench]]
 name = "crypto_bigint_benches"
 harness = false
+
+[[bench]]
+name = "secp256k1_benches"
+harness = false
+
