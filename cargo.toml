@@ -12,5 +12,5 @@ criterion = { version = "0.4", features = ["html_reports"] }
 elliptic-curve = { version = "0.13.4", features = ["arithmetic", "group"] }
 
 [[bench]]
-name = "crypto_bigint_benches"
+name = "curv_benches"
 harness = false
